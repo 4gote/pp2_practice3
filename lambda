@@ -1,0 +1,8 @@
+x = lambda a: a + 6
+print(x(3))
+
+x = lambda a, b: a * b
+print(x(6, 10))
+
+x = lambda a, b: a + b + c
+print(x(6, 10, 8))
