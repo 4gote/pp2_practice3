@@ -1,0 +1,29 @@
+def my_function(*args):
+print("Age:", type(args))
+print("Oldest:", args[0])
+print("Youngest:", args[1])
+print("Children:", args)
+my_function("Emil", "Tobias", "Linus")
+
+def my_function(*cars):
+print("The Luxury car is " + cars[1])
+my_function("Toyota", "Mercedes-Benz ", "Hyundai")
+
+def my_function(*numbers):
+total = 0
+for num in numbers:
+total += num
+return total
+print(my_function(1, 2, 3))
+print(my_function(10, 20, 30, 40))
+
+def my_function(**myvar):
+print("Offer:", type(myvar))
+print("Position:", myvar["position"])
+print("Salary:", myvar["salary"])
+print("All data:", myvar)
+my_function(position = "cook", salary = "2100$", city = "Munchen")
+
+def my_function(**friend):
+print("His last name is " + friend["lname"])
+my_function(fname = "John", lname = "Rohny")
