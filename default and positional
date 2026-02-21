@@ -1,0 +1,13 @@
+//positional
+def my_function(room, sq_meter):
+  print("I have a", room)
+  print("My", room + "'s sq_meter are", sq_meter)
+my_function("Room", "15")
+
+/Default
+def my_function(name = "to_do_tasks"):
+  print("Do", name)
+my_function("Exercises")
+my_function("HW")
+my_function("Presentation")
+my_function("Quiz")
